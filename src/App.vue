@@ -1,26 +1,39 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id="app">
+        <AppHeader />
+        <AppBread />
+        <router-view /> <!-- Здесь рендерятся страницы -->
+        <AppFooter />
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import AppHeader from '@/components/AppHeader.vue';
+import AppFooter from '@/components/AppFooter.vue';
+import AppBread from '@/components/AppBread.vue';
+import axios from 'axios';
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+    
+    name: 'App',
+    components: {
+        AppHeader,
+        AppFooter,
+        AppBread,
+    },
+    data() {
+        return {
+            message: "Загрузка...",
+        };
+    },
+    async created() {
+        try {
+            const res = await axios.get("http://localhost:5000/");
+            this.message = res.data;
+        } catch (error) {
+            this.message = "Ошибка подключения";
+            console.error(error);
+        }
+    },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>

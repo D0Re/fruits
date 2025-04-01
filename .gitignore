@@ -21,3 +21,32 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+# Логи и временные файлы
+debug_log*
+error_log*
+
+# Зависимости и настройки окружения
+node_modules/
+.vscode/
+.idea/
+.DS_Store
+
+# Файлы конфигурации и блокировки
+package-lock.json
+yarn.lock
+pyverw.cfg
+
+# Скрытые файлы и системные файлы
+Thumbs.db
+*.swp
+*.swo
+
+# Директории, которые могут быть сгенерированы автоматически
+__pycache__/
+*.py[cod]
+
+# Файлы IDE и редакторов
+*.iml
+*.suo
+*.njsproj
+*.sln

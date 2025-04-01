@@ -1,0 +1,343 @@
+[
+  {
+    "id": 1740939099695,
+    "fullName": "Неженцев Даниил Александровичsdsa",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9103059141",
+    "items": [
+      {
+        "id": "prod001",
+        "name": "Молоко коровье цельное 3,5 - 5%",
+        "category": "Молоко",
+        "price": "100",
+        "oldprice": "120",
+        "parentcategory": "Молоко, яйца и молочная продукция",
+        "procent": "-17%",
+        "units": "/от 1л",
+        "sale": "15.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14824/484f8b-600x600.jpg?v=3",
+        "desc": "Свежее коровье молоко с натуральной жирностью.",
+        "quantity": 1
+      },
+      {
+        "id": "prod004",
+        "name": "Говядина 1кг",
+        "category": "Говядина и телятина",
+        "price": "600",
+        "oldprice": "700",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "procent": "-14%",
+        "sale": "25.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/139/8013e4-600x600.JPG?v=3",
+        "desc": "Сочная говядина для приготовления вкусных блюд.",
+        "quantity": 1
+      },
+      {
+        "id": "prod006",
+        "name": "Филе грудки курицы",
+        "category": "Курица",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "price": "648",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/2961/0a3929-600x600.JPG?v=3",
+        "desc": "Нежное филе куриной грудки для диетических блюд.",
+        "quantity": 1
+      },
+      {
+        "id": "prod009",
+        "name": "Лопатка говяжья на кости",
+        "category": "Говядина и телятина",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "price": "1449",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/11932/3b12c5-600x600.JPG?v=3",
+        "desc": "Ароматная говяжья лопатка на кости для тушения.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 2797
+  },
+  {
+    "id": 1740939511076,
+    "fullName": "Ерохин Александр",
+    "email": "erohin_01@inbox.ru",
+    "phone": "9534782817",
+    "items": [
+      {
+        "id": "prod001",
+        "name": "Молоко коровье цельное 3,5 - 5%",
+        "category": "Молоко",
+        "price": "100",
+        "oldprice": "120",
+        "parentcategory": "Молоко, яйца и молочная продукция",
+        "procent": "-17%",
+        "units": "/от 1л",
+        "sale": "15.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14824/484f8b-600x600.jpg?v=3",
+        "desc": "Свежее коровье молоко с натуральной жирностью.",
+        "quantity": 9
+      },
+      {
+        "id": "prod002",
+        "name": "Творог 250г",
+        "category": "Творог",
+        "price": "150",
+        "oldprice": "180",
+        "procent": "-16%",
+        "units": "/от 1шт",
+        "parentcategory": "Молоко, яйца и молочная продукция",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/3310/43b7d5-600x600.JPG?v=3",
+        "desc": "Натуральный творог с нежным вкусом.",
+        "quantity": 5
+      },
+      {
+        "id": "prod006",
+        "name": "Филе грудки курицы",
+        "category": "Курица",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "price": "648",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/2961/0a3929-600x600.JPG?v=3",
+        "desc": "Нежное филе куриной грудки для диетических блюд.",
+        "quantity": 3
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "По терминалу курьеру",
+    "totalPrice": 3594
+  },
+  {
+    "id": 1740939729924,
+    "fullName": "Ерохин Александр",
+    "email": "erohin_01@inbox.ru",
+    "phone": "9534782817",
+    "items": [
+      {
+        "id": "prod014",
+        "name": "Фарш из кролика",
+        "category": "Фарш",
+        "parentcategory": "Мясо, птица",
+        "price": "800",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "new": "Новинка",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/3940/4bdb1a-600x600.JPG?v=3",
+        "desc": "Нежный фарш из кролика для котлет.",
+        "quantity": 2
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 1600
+  },
+  {
+    "id": 1740940082432,
+    "fullName": "Землянская Дарья Александровна",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9507560673",
+    "items": [
+      {
+        "id": "prod005",
+        "name": "Гусь Тушка(заморозка)",
+        "category": "Гусь",
+        "price": "3200",
+        "oldprice": "4000",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "procent": "-20%",
+        "units": "/от 1кг",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14328/a84599-600x600.jpg?v=3",
+        "desc": "Замороженная тушка гуся для праздничного стола.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 3200
+  },
+  {
+    "id": 1740940192780,
+    "fullName": "Землянская Дарья Александровна",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9507560673",
+    "items": [
+      {
+        "id": "prod005",
+        "name": "Гусь Тушка(заморозка)",
+        "category": "Гусь",
+        "price": "3200",
+        "oldprice": "4000",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "procent": "-20%",
+        "units": "/от 1кг",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14328/a84599-600x600.jpg?v=3",
+        "desc": "Замороженная тушка гуся для праздничного стола.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 3200
+  },
+  {
+    "id": 1740940271688,
+    "fullName": "test bot",
+    "email": "testbot@mail.ru",
+    "phone": "9123456789",
+    "items": [
+      {
+        "id": "prod022",
+        "name": "Сыр Гауда",
+        "category": "Сыры",
+        "parentcategory": "Молоко, яйца и молочная продукция",
+        "price": "500",
+        "units": "/от 200г",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/16655/c70141-600x600.jpg?v=3",
+        "desc": "Классический сыр Гауда с насыщенным вкусом.",
+        "quantity": 1
+      },
+      {
+        "id": "prod021",
+        "name": "Сыр Буррата",
+        "category": "Сыры",
+        "parentcategory": "Молоко, яйца и молочная продукция",
+        "price": "400",
+        "oldprice": "500",
+        "units": "/от 200г",
+        "procent": "-20%",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/16649/fa058a-600x600.jpg?v=3",
+        "desc": "Нежный сыр Буррата с кремовой текстурой.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Доставка (+500₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 1400
+  },
+  {
+    "id": 1740940686851,
+    "fullName": "Неженцев Даниил Александрович",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9103059141",
+    "items": [
+      {
+        "id": "prod005",
+        "name": "Гусь Тушка(заморозка)",
+        "category": "Гусь",
+        "price": "3200",
+        "oldprice": "4000",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "procent": "-20%",
+        "units": "/от 1кг",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14328/a84599-600x600.jpg?v=3",
+        "desc": "Замороженная тушка гуся для праздничного стола.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 3200
+  },
+  {
+    "id": 1740940808874,
+    "fullName": "Землянская Дарья Александровна",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9507560673",
+    "items": [
+      {
+        "id": "prod005",
+        "name": "Гусь Тушка(заморозка)",
+        "category": "Гусь",
+        "price": "3200",
+        "oldprice": "4000",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "procent": "-20%",
+        "units": "/от 1кг",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14328/a84599-600x600.jpg?v=3",
+        "desc": "Замороженная тушка гуся для праздничного стола.",
+        "quantity": 1
+      },
+      {
+        "id": "prod006",
+        "name": "Филе грудки курицы",
+        "category": "Курица",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "units": "/от 1кг",
+        "price": "648",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/2961/0a3929-600x600.JPG?v=3",
+        "desc": "Нежное филе куриной грудки для диетических блюд.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 3848
+  },
+  {
+    "id": 1740941328923,
+    "fullName": "Ерохин Александр",
+    "email": "erohin_01@inbox.ru",
+    "phone": "9534782817",
+    "items": [
+      {
+        "id": "prod012",
+        "name": "Филе грудки индейки",
+        "category": "Индейка",
+        "parentcategory": "Мясо, птица",
+        "price": "500",
+        "meat": "мясо",
+        "new": "Новинка",
+        "units": "/от 1кг",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14316/e46467-600x600.jpg?v=3",
+        "desc": "Диетическое филе грудки индейки.",
+        "quantity": 4
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 2000
+  },
+  {
+    "id": 1740941372940,
+    "fullName": "Неженцеd Даниил Александрович",
+    "email": "nezhentsev12@mail.ru",
+    "phone": "9103059141",
+    "items": [
+      {
+        "id": "prod005",
+        "name": "Гусь Тушка(заморозка)",
+        "category": "Гусь",
+        "price": "3200",
+        "oldprice": "4000",
+        "parentcategory": "Мясо, птица",
+        "meat": "мясо",
+        "procent": "-20%",
+        "units": "/от 1кг",
+        "sale": "20.02.2025",
+        "image": "https://cdn.esh-derevenskoe.ru/image/cache/catalog/product/14328/a84599-600x600.jpg?v=3",
+        "desc": "Замороженная тушка гуся для праздничного стола.",
+        "quantity": 1
+      }
+    ],
+    "deliveryMethod": "Самовывоз (0₽)",
+    "paymentMethod": "Наличными курьеру",
+    "totalPrice": 3200
+  }
+]
