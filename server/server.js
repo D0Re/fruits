@@ -230,13 +230,18 @@ app.post('/create-order', async (req, res) => {
 
 // Запуск Python-анализа по запросу
 app.get('/api/run-analysis', (req, res) => {
+  const month = req.query.month; // Получаем параметр месяца из запроса
   const scriptPath = path.join('../python_analytics/main.py');
-  console.log(`Запуск Python: python ${scriptPath}`); // Логируем команду
 
-  exec(`python ${scriptPath}`, (error, stdout, stderr) => {
-    console.log('stdout:', stdout); // Что выводит Python?
-    console.log('stderr:', stderr); // Есть ли ошибки?
-    console.log('error:', error);   // Ошибка выполнения?
+  // Формируем команду с параметром месяца, если он есть
+  const command = month ? `python ${scriptPath} "${month}"` : `python ${scriptPath}`;
+
+  console.log(`Запуск Python: ${command}`);
+
+  exec(command, (error, stdout, stderr) => {
+    console.log('stdout:', stdout);
+    console.log('stderr:', stderr);
+    console.log('error:', error);
 
     if (error) {
       console.error(`Ошибка выполнения Python-скрипта: ${error.message}`);

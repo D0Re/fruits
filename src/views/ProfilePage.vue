@@ -22,16 +22,18 @@
             </div>
         </div>
     </div>
-    <AnalisisRun   v-if="showAnalisisRun" />
+    <AnalisisRun v-if="showAnalisisRun" />
+    
 </template>
 
 <script>
 import { mapActions, mapState } from 'vuex';
 import AnalisisRun from '@/components/Analisis-run.vue';
 
+
 export default {
     name: 'ProfilePage',
-    components: { AnalisisRun },
+    components: { AnalisisRun},
     computed: {
         ...mapState(['user']), // Подключаем данные пользователя из Vuex
         userEmail() {

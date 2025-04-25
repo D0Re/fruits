@@ -9,7 +9,6 @@ import { defineComponent } from "vue";
 import { Line } from "vue-chartjs";
 import { Chart as ChartJS, Title, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement } from "chart.js";
 
-// Регистрируем компоненты Chart.js
 ChartJS.register(Title, Tooltip, Legend, LineElement, CategoryScale, LinearScale, PointElement);
 
 export default defineComponent({
@@ -22,13 +21,27 @@ export default defineComponent({
             chartOptions: {
                 responsive: true,
                 plugins: {
-                    legend: { display: true, position: "right" },
-                    tooltip: { enabled: true }
-                    
+                    legend: { display: true, position: "top" },
+                    tooltip: {
+                        enabled: true,
+                        callbacks: {
+                            label: function (context) {
+                                return `${context.dataset.label}: ${context.raw}`;
+                            }
+                        }
+                    }
                 },
                 scales: {
-                    x: { title: { display: true, text: "Месяцы" } },
-                    y: { title: { display: true, text: "Количество продаж" }, beginAtZero: true }
+                    x: {
+                        title: { display: true, text: "Дни месяца" },
+                        ticks: {
+                            autoSkip: false
+                        }
+                    },
+                    y: {
+                        title: { display: true, text: "Количество продаж" },
+                        beginAtZero: true
+                    }
                 }
             }
         };
@@ -40,6 +53,6 @@ export default defineComponent({
 .chart-container {
     max-width: 1200px;
     margin: 0 auto;
-   
+    height: 400px;
 }
 </style>
