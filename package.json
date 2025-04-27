@@ -8,14 +8,19 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "apexcharts": "^4.7.0",
     "axios": "^1.8.1",
-    "chart.js": "^4.4.8",
+    "chart.js": "^4.4.9",
     "core-js": "^3.8.3",
+    "force-graph": "^1.49.5",
     "swiper": "^11.2.2",
+    "vis-data": "^7.1.9",
+    "vis-network": "^9.1.9",
     "vue": "^3.2.13",
     "vue-chart-3": "^3.1.8",
     "vue-chartjs": "^5.3.2",
     "vue-router": "^4.5.0",
+    "vue3-apexcharts": "^1.8.0",
     "vuex": "^4.1.0"
   },
   "devDependencies": {

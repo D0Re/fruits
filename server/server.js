@@ -259,6 +259,81 @@ app.get('/api/run-analysis', (req, res) => {
     }
   });
 });
+app.get('/api/recommendations', (req, res) => {
+  // Получаем абсолютный путь к скрипту
+  const scriptPath = path.resolve(__dirname, '../python_analytics', 'recommendations.py');
+  console.log(`Запуск Python-скрипта: "${scriptPath}"`);
+
+  // Убедись, что путь правильно заключён в кавычки, чтобы предотвратить проблемы с пробелами
+  exec(`python "${scriptPath}"`, (error, stdout, stderr) => {
+    console.log('=== Результат выполнения ===');
+    console.log('stdout:', stdout);
+    console.log('stderr:', stderr);
+
+    if (error) {
+      console.error('Ошибка выполнения:', error);
+      return res.status(500).json({
+        error: 'Ошибка выполнения Python-скрипта',
+        details: stderr || error.message,
+        additionalInfo: {
+          scriptPath,
+          pythonVersion: 'Попробуйте выполнить "python --version" в командной строке'
+        }
+      });
+    }
+
+    try {
+      const data = JSON.parse(stdout);
+      res.json(data);
+    } catch (parseError) {
+      console.error('Ошибка парсинга:', parseError);
+      res.status(500).json({
+        error: 'Ошибка обработки данных',
+        details: stdout || 'Нет данных для анализа'
+      });
+    }
+  });
+
+
+});
+
+app.get('/api/rfm-data', (req, res) => {
+  // Получаем абсолютный путь к скрипту
+  const scriptPath = path.resolve(__dirname, '../python_analytics', 'rfm.py');
+  console.log(`Запуск Python-скрипта: "${scriptPath}"`);
+
+  // Убедись, что путь правильно заключён в кавычки, чтобы предотвратить проблемы с пробелами
+  exec(`python "${scriptPath}"`, (error, stdout, stderr) => {
+    console.log('=== Результат выполнения ===');
+    console.log('stdout:', stdout);
+    console.log('stderr:', stderr);
+
+    if (error) {
+      console.error('Ошибка выполнения:', error);
+      return res.status(500).json({
+        error: 'Ошибка выполнения Python-скрипта',
+        details: stderr || error.message,
+        additionalInfo: {
+          scriptPath,
+          pythonVersion: 'Попробуйте выполнить "python --version" в командной строке'
+        }
+      });
+    }
+
+    try {
+      const data = JSON.parse(stdout);
+      res.json(data);
+    } catch (parseError) {
+      console.error('Ошибка парсинга:', parseError);
+      res.status(500).json({
+        error: 'Ошибка обработки данных',
+        details: stdout || 'Нет данных для анализа'
+      });
+    }
+  });
+
+
+});
 
 
 // Добавление в wishlist

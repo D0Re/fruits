@@ -23,17 +23,20 @@
         </div>
     </div>
     <AnalisisRun v-if="showAnalisisRun" />
+    <RecommendationsChart />
+    <RfmScatter />
     
 </template>
 
 <script>
 import { mapActions, mapState } from 'vuex';
 import AnalisisRun from '@/components/Analisis-run.vue';
-
+import RecommendationsChart from '@/components/RecommendationsChart.vue';
+import RfmScatter from '@/components/RfmScatter.vue'
 
 export default {
     name: 'ProfilePage',
-    components: { AnalisisRun},
+    components: { AnalisisRun, RecommendationsChart, RfmScatter},
     computed: {
         ...mapState(['user']), // Подключаем данные пользователя из Vuex
         userEmail() {
