@@ -87,7 +87,7 @@ def perform_rfm_quantile_analysis():
     # Берем топ-20 в каждом сегменте
     top_clients = (
         rfm.groupby('segment', group_keys=False)
-        .apply(lambda x: x.nlargest(20, 'monetary'))
+        .apply(lambda x: x.nlargest(200, 'monetary'))
         .reset_index(drop=True)
     )
 

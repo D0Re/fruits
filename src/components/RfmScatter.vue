@@ -4,26 +4,29 @@
         <apexchart type="scatter" :options="chartOptions" :series="chartData" height="350"></apexchart>
 
         <!-- Таблица с данными пользователей -->
-        <table v-if="userData.length > 0" border="1" style="margin-top: 20px; width: 100%; text-align: left;">
-            <thead>
-                <tr>
-                    <th>User ID</th>
-                    <th>Recency</th>
-                    <th>Frequency</th>
-                    <th>Monetary</th>
-                    <th>Segment</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr v-for="user in userData" :key="user.user_id">
-                    <td>{{ user.user_id }}</td>
-                    <td>{{ user.recency }}</td>
-                    <td>{{ user.frequency }}</td>
-                    <td>{{ user.monetary }}</td>
-                    <td>{{ user.segment }}</td>
-                </tr>
-            </tbody>
-        </table>
+        <div style="margin-top: 20px; width: 100%; text-align: left; height: 500px;  overflow: auto;">
+            <table v-if="userData.length > 0" border="1"
+                style="margin-top: 20px; width: 100%; text-align: left; height: 500px;  overflow: auto;">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Recency</th>
+                        <th>Frequency</th>
+                        <th>Monetary</th>
+                        <th>Segment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="user in userData" :key="user.user_id">
+                        <td>{{ user.user_id }}</td>
+                        <td>{{ user.recency }}</td>
+                        <td>{{ user.frequency }}</td>
+                        <td>{{ user.monetary }}</td>
+                        <td>{{ user.segment }}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </template>
 
@@ -46,16 +49,24 @@ export default {
                     },
                 },
                 xaxis: {
-                    title: {
-                        text: 'Recency',
-                    },
-                    type: 'numeric',
+                    min: 0,
+                    max: 200, // Примерное максимальное значение recency
+                    labels: {
+                        show: false // скрыть все подписи на оси X
+                    }
                 },
                 yaxis: {
-                    title: {
-                        text: 'Monetary',
-                    },
-                    type: 'numeric',
+                    min: 0,
+                    max: 200, // Примерное максимальное значение monetary
+                    labels: {
+                        formatter: function (value) {
+                            // Округляем до целого и убираем десятичные нули
+                            return Math.round(value).toString();
+
+                            // Или альтернативный вариант:
+                            // return value % 1 === 0 ? value.toString() : value.toFixed(2);
+                        }
+                    }
                 },
                 markers: {
                     size: 5,
@@ -103,19 +114,18 @@ export default {
                     if (item.recency !== undefined && item.monetary !== undefined) {
                         return {
                             x: item.recency,
-                            y: item.monetary,
+                            y: item.frequency,
                             segment: item.segment,
                         };
                     }
                     return null;  // Игнорируем элементы с некорректными значениями
                 }).filter(item => item !== null); // Убираем элементы с null
 
-                // Проверка данных
-                console.log('Processed Data:', processedData);
+               
 
                 // Разделяем данные по сегментам для визуализации
                 const segments = [...new Set(processedData.map(item => item.segment))];
-                console.log('Segments:', segments);
+              
 
                 const series = segments.map(segment => {
                     const dataForSegment = processedData.filter(item => item.segment === segment).map(item => ({
@@ -124,8 +134,7 @@ export default {
                         segment: item.segment,
                     }));
 
-                    // Проверка данных для сегмента
-                    console.log('Data for segment:', segment, dataForSegment);
+                  
 
                     return {
                         name: segment,
