@@ -7,7 +7,7 @@ import json
 
 def get_db_connection():
     try:
-        DB_URL = "postgresql://vue_user:d7772001@localhost:5432/vue_db"
+        DB_URL = ""
         return create_engine(DB_URL)
     except Exception as e:
         print(json.dumps({"error": f"Ошибка подключения к БД: {str(e)}"}))

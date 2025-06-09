@@ -6,7 +6,7 @@ from datetime import datetime
 
 def get_db_connection():
     try:
-        DB_URL = "postgresql://vue_user:d7772001@localhost:5432/vue_db"
+        DB_URL = ""
         engine = create_engine(DB_URL)
         return engine
     except Exception as e:

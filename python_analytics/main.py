@@ -11,7 +11,7 @@ from prophet import Prophet
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 # Подключение к PostgreSQL
-DB_URL = "postgresql://vue_user:d7772001@localhost:5432/vue_db"
+DB_URL = ""
 engine = create_engine(DB_URL)
 
 
