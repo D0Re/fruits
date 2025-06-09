@@ -1,5 +1,6 @@
 <template>
     <div class="conntent">
+        <h2 class="text-xl font-semibold mb-4">Сегментация клиентов</h2>
         <!-- График -->
         <apexchart type="scatter" :options="chartOptions" :series="chartData" height="350"></apexchart>
 
@@ -163,10 +164,14 @@ export default {
 </script>
 <style scoped>
 .conntent {
-    max-width: 800px;
+    max-width: 1146px;
     width: 100%;
    margin: 0 auto;
     padding-bottom: 100px;
     display: block;
+}
+.text-xl{
+    margin-bottom: 20px;
+
 }
 </style>

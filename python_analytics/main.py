@@ -4,6 +4,8 @@ from sqlalchemy import create_engine
 import sys
 import io
 from datetime import datetime, timedelta
+from prophet import Prophet
+
 
 # Настройка вывода в консоль
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
@@ -109,6 +111,7 @@ def run_analysis(selected_month=None):
     except Exception as e:
         print(f"Ошибка анализа: {e}")
         return {"error": str(e)}
+
 
 if __name__ == "__main__":
     # Получаем аргумент командной строки (месяц в формате YYYY-MM)
